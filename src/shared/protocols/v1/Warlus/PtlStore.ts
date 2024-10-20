@@ -15,5 +15,5 @@ export interface ReqStore {
 export interface ResStore {
     /** 服务端内容创建时间 */
     sui_digest:string
-    time: Date
+    time: string
 }

@@ -50,7 +50,7 @@ export default async function (call: ApiCall<ReqStore, ResStore>) {
         console.log("SuiTransactionBlockResponse:", suiTransactionBlockResponse);
         if ('effects' in suiTransactionBlockResponse && suiTransactionBlockResponse.effects?.status?.status === 'success') {
             return call.succ({ 
-                time: new Date(),
+                time: new Date().getTime().toString(),
                 sui_digest: suiTransactionBlockResponse.digest
             });
         } else {
