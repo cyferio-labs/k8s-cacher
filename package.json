@@ -11,7 +11,9 @@
     "test": "mocha test/**/*.test.ts",
     "proto": "tsrpc-cli proto",
     "sync": "tsrpc-cli sync",
-    "api": "tsrpc-cli api"
+    "api": "tsrpc-cli api",
+    "docker:build": "docker build -t sui-da .",
+    "docker:run": "docker run -p 3000:3000 sui-da"
   },
   "devDependencies": {
     "@types/mocha": "^8.2.3",
@@ -23,6 +25,7 @@
     "typescript": "^4.9.5"
   },
   "dependencies": {
-    "tsrpc": "^3.4.16"
+    "tsrpc": "^3.4.16",
+    "tsrpc-proto": "^1.4.3"
   }
 }

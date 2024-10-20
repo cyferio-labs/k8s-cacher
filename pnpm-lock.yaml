@@ -11,6 +11,9 @@ importers:
       tsrpc:
         specifier: ^3.4.16
         version: 3.4.16
+      tsrpc-proto:
+        specifier: ^1.4.3
+        version: 1.4.3
     devDependencies:
       '@types/mocha':
         specifier: ^8.2.3
