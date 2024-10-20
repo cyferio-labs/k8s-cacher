@@ -4,6 +4,8 @@ import { serviceProto } from "./shared/protocols/serviceProto";
 
 // Create the Server
 const server = new HttpServer(serviceProto, {
+    apiTimeout: 999999,
+    keepAliveTimeout: 999999,
     port: 3000,
     // Remove this to use binary mode (remove from the client too)
     json: true
